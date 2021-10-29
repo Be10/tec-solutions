@@ -1332,7 +1332,6 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   color: #898798;
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
 .col-lg-4 #Ad {
@@ -1352,8 +1351,8 @@ a.text-dark:hover, a.text-dark:focus {
 .page-banner {
   position: relative;
   margin-top: 16px;
-  margin-bottom: 16px;
-  height: 320px;
+  margin-bottom: 20px;
+  height: 200px;
   background-color: #F6F5FC;
   color: #645F88;
   border-radius: 30px;
@@ -1365,7 +1364,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .page-banner.home-banner .img-fluid {
-  max-width: 380px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
@@ -1748,6 +1747,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   padding-top: 50px;
   padding-bottom: 16px;
+  margin-top: 20px;
   background-color: #2D2B3A;
 }
 
