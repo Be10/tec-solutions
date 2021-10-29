@@ -131,9 +131,6 @@
   </div> <!-- .page-section -->
 
 
-  <!-- WhatsApp Floating Button -->
-  <a href="https://api.whatsapp.com/send?phone=51943364173&text=👋🏻 Hola, tengo una pregunta" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-
 
   <footer class="page-footer bg-image" style="background-image: url(assets/img/world_pattern.svg);">
     <div class="container">
@@ -162,6 +159,41 @@
       <p class="text-center" id="copyright">Copyright &copy; 2021. Esta página fue creada por <a href="https://be10.github.io/tec-solutions/" target="_blank">TEC Solutions</a></p>
     </div>
   </footer>
+
+
+  <!-- Messenger plugin de chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your plugin de chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "430477230366456");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v12.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://api.whatsapp.com/send?phone=51943364173&text=👋🏻 Hola, tengo una pregunta" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+
 
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 
