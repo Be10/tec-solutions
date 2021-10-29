@@ -1394,7 +1394,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 768px) {
   .page-banner.home-banner {
-    height: 540px;
+    height: 300px;
   }
 }
 
@@ -2104,24 +2104,25 @@ a.text-dark:hover, a.text-dark:focus {
 /* WhatsApp */
 
 .whatsapp {
-  position:fixed;
-  width:60px;
-  height:60px;
-  bottom:20px;
-  right:24px;
+  position:relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color:#25d365;
   color:#ffffff;
   border-radius:50px;
   text-align:center;
-  font-size:38px;
-  z-index:100;
+  font-size:16px;
 }
 
 .whatsapp:hover {
   background-color:#25d365cb;
   color: #ffffffd3;
+  text-decoration: none;
 }
 
 .whatsapp-icon {
-  margin-top:10px;
+  margin-top: 2px;
+  font-size: 20px !important;
 }
